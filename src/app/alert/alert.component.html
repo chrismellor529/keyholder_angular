@@ -1,0 +1,7 @@
+<div class="alert-wrapper">
+  <div *ngFor="let alert of alerts"
+       class="alert {{ cssClass(alert) }}"
+       (click)="removeAlert(alert)">
+    {{alert.message}}
+  </div>
+</div>
